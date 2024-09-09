@@ -1,22 +1,10 @@
 import { useId, useState } from 'react';
 import './App.css';
-import DefaultTextField from './components/DefaultTextField';
-import Label from './components/Label';
+import CursorComponent from './components/CursorComponent';
 
 function App() {
   const [count, setCount] = useState(0);
   const inputId = useId();
-
-  // iconPath
-  // alt
-  // width
-  // height
-  // onClick
-  // placeholder
-  // onChange
-  // value
-  // errorMessage
-  // isError
 
   const [inputValue, setInputValue] = useState<string>('');
   const [isError, setIsError] = useState<boolean>(false);
@@ -31,7 +19,7 @@ function App() {
   const ErrorMessage = '에러가 발생했습니다.';
   return (
     <>
-      <div className='mb-[30px]'>
+      {/* <div className='mb-[30px]'>
         <Label htmlFor={`username${inputId}`}>Username</Label>
         <DefaultTextField
           iconPath={
@@ -55,7 +43,8 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className='read-the-docs'>Click on the Vite and React logos to learn more</p>
+      <p className='read-the-docs'>Click on the Vite and React logos to learn more</p> */}
+      <CursorComponent />
     </>
   );
 }
