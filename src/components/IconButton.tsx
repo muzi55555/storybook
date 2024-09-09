@@ -3,7 +3,7 @@ interface IIconButtonProps {
   alt: string;
   width: number;
   height: number;
-  onClick: () => void;
+  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 export default function IconButton({ iconPath, onClick, alt, width, height }: IIconButtonProps) {
   return (

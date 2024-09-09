@@ -7,9 +7,9 @@ interface IDefaultTextFieldProps {
   alt: string;
   width: number;
   height: number;
-  onClick: () => void;
+  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
   placeholder: string;
-  onChange: () => void;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   value: string;
   errorMessage: string;
   isError: boolean;
